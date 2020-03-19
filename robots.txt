@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /*.html$
+Sitemap: http://www.airinda.lt/sitemap.xml

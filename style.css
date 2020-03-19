@@ -3,8 +3,25 @@ body, html {
     line-height: 1.8;
 }
 
-body,h1,h2,h3,h4,h5,h6 {
+body,h1,h3,h4,h5,h6 {
     font-family: "Raleway", sans-serif;
+}
+
+h2{
+    font-family: "Garamond", sans-serif;
+}
+
+.customListStyle {
+    list-style: none; /* Remove default bullets */
+}
+
+.customListStyle li::before {
+    content: "\2609";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .navbar{
@@ -50,7 +67,7 @@ body,h1,h2,h3,h4,h5,h6 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: Garamond
+    font-family: Garamond, sans-serif
 }
 
 .text-xxl {
@@ -118,41 +135,51 @@ body,h1,h2,h3,h4,h5,h6 {
     background: linear-gradient(315deg, #f7ff00, #43C6AC);
     background-size: 400% 400%;
 
-    -webkit-animation: GradientAnimation 37s ease infinite;
-    -moz-animation: GradientAnimation 37s ease infinite;
-    -o-animation: GradientAnimation 37s ease infinite;
-    animation: GradientAnimation 37s ease infinite;
+    -webkit-animation: GradientAnimation 15s ease infinite;
+    -moz-animation: GradientAnimation 15s ease infinite;
+    -o-animation: GradientAnimation 15s ease infinite;
+    animation: GradientAnimation 15s ease infinite;
 }
 
 #contacts{
     background: linear-gradient(315deg, #43C6AC, #f7ff00);
     background-size: 400% 400%;
 
-    -webkit-animation: GradientAnimation 37s ease infinite;
-    -moz-animation: GradientAnimation 37s ease infinite;
-    -o-animation: GradientAnimation 37s ease infinite;
-    animation: GradientAnimation 37s ease infinite;
+    -webkit-animation: GradientAnimation 15s ease infinite;
+    -moz-animation: GradientAnimation 15s ease infinite;
+    -o-animation: GradientAnimation 15s ease infinite;
+    animation: GradientAnimation 15s ease infinite;
+}
+
+#work{
+    background: linear-gradient(315deg, #dddddd, #ffffff, #bbbbbb);
+    background-size: 400% 400%;
+
+    -webkit-animation: GradientAnimation 15s ease infinite;
+    -moz-animation: GradientAnimation 15s ease infinite;
+    -o-animation: GradientAnimation 15s ease infinite;
+    animation: GradientAnimation 15s ease infinite;
 }
 
 @-webkit-keyframes GradientAnimation {
-    0%{background-position:100% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:100% 0%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 @-moz-keyframes GradientAnimation {
-    0%{background-position:100% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:100% 0%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 @-o-keyframes GradientAnimation {
-    0%{background-position:100% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:100% 0%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 @keyframes GradientAnimation {
-    0%{background-position:100% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:100% 0%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .deepshadow {
